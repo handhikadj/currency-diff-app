@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency App</title>
+  </head>
+  <body>
+    <div class="app-container w-3/4 m-0 m-auto pb-10">
+      <div class="select-currency pt-5">
+        <label for="currencies-select" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select a currency</label>
+        <select id="currencies-select" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option value="usd" selected>USD</option>
+          <option value="eur">EUR</option>
+          <option value="aud">AUD</option>
+          <option value="cad">CAD</option>
+          <option value="chf">CHF</option>
+          <option value="nzd">NZD</option>
+          <option value="bgn">BGN</option>
+        </select>
+      </div>
+      
+      <div id="table-currency-container" class="mt-5 flex justify-between">
+      </div>
+
+      <h2 class="mt-2 font-bold italic"><span>Total Difference: </span><span id="total-difference"></span></h2>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@styles/*": [
+                "styles/*"
+            ],
+        }
+    },
+    "exclude": [
+        "dist",
+        "public",
+    ]
+}
