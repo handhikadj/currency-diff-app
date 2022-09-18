@@ -37,7 +37,7 @@ export const renderToView = (data) => {
   let tableStr = '';
   mapCurrency(data).forEach((item) => {
     tableStr += '<div class="">';
-    tableStr += `<h4 class="font-bold">Group: ${item.groupId} (${item.constraint})</h4>`;
+    tableStr += `<h4 class="font-bold">Group ${item.groupId} (${item.constraint})</h4>`;
 
     item?.items?.forEach((tableItem) => {
       tableStr += `<p>${tableItem.name.toUpperCase()}: ${tableItem.rate}</p>`;
